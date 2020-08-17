@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+:root {
+  --black: #222;
+  --primary: #484F61;
+  --secondary: #159ED4;
+  --grey: #555;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  /* A cada 1rem será considerado 10px */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: 'Source Sans Pro';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 998px;
+  margin: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  padding: 23px 0;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--grey);
+}
+
+header nav ul li a:hover {
+  color: var(--secondary);
+}
+
+header nav ul li a.active {
+  color: var(--secondary);
+}
+
+#who-we-are {
+  display: flex;
+  justify-content: center;
+}
+
+#who-we-are .container {
+  width: 90%;
+  max-width: 700px;
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#who-we-are h1 {
+  color: var(--black);
+  font-size: 4.2rem;
+}
+
+#who-we-are p {
+  color: var(--grey);
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+#who-we-are img {
+    height: 380px;
+    margin-left: 50px;
+}
+
+#what-we-do {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 20px;
+}
+
+#what-we-do .service {
+  text-align: center;
+}
+
+#what-we-do img {
+  height: 100px;
+}
+
+#what-we-do h3 {
+  margin-top: 5px;
+}
+
+#what-we-do p {
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+footer {
+  margin-top: 80px;
+  padding: 50px;
+  background-color: var(--primary);
+}
+
+form {
+  margin: 90%;
+  max-width: 998px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.15), 
+    0px 10px 20px -10px rgba(0, 0, 0, 0.1)
+}
+
+form h2 {
+  font-size: 2.8rem;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group label.right-inline {
+  text-align: right;  
+  padding-right: 8px;
+  padding-left: 10px;
+  width: auto;
+}
+
+.form-group .input-control {
+  flex: 1 1;
+  display: block;
+  margin: -4px 8px 10px;
+  padding: 12px;
+  font-size: 1.6rem;
+}
+
+form .button {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: var(--primary);
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 150ms linear 0s;
+}
+
+form .button:hover {
+  opacity: 0.9;
+}
+
+form .button {
+  margin: 20px 8px 10px;
+}
+
+
+
+
